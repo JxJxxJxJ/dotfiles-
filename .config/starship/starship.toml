@@ -1,0 +1,257 @@
+## ░█▀▀░▀█▀░█▀█░█▀▄░█▀▀░█░█░▀█▀░█▀█
+## ░▀▀█░░█░░█▀█░█▀▄░▀▀█░█▀█░░█░░█▀▀
+## ░▀▀▀░░▀░░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░░
+## CROSS-SHELL PROMPT
+## The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
+format = """
+$username\
+$hostname\
+$directory\
+
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$vcsh\
+$hg_branch\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$custom\
+
+$sudo\
+
+$fill\
+$cmd_duration\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+$line_break\
+$character"""
+
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+## FIRST LINE/ROW: Info & Status
+# First param ─┌
+[username]
+format = "[╭─](fg:#232526 bg:none)[]($style)[](fg:#33D17A bg:#232526)[$user](bold fg:#232526 bg:#33D17A)[](fg:#33D17A bg:none) "
+style_user = "fg:#edeff0 bg:#232526"
+style_root = "bold red"
+show_always = true
+
+# Second param
+[hostname]
+ssh_only = true 
+format = "[](fg:#232526 bg:none)[](fg:#eee8d5 bg:#232526)[$ssh_symbol$hostname](bold bg:#eee8d5)[](fg:#eee8d5 bg:none) "
+disabled = false
+
+# Third param
+[directory]
+format = "[](fg:#232526 bg:none)[$path]($style)[](fg:#232526 bg:#232526)[](fg:#62A0EA bg:#232526)[](fg:#232526 bg:#62A0EA)[](fg:#62A0EA bg:none) "
+style = "fg:#edeff0 bg:#232526 bold"
+truncation_length = 3
+truncate_to_repo=false
+read_only = " "
+
+## SECOND LINE/ROW: Prompt
+# Prompt: param 2 └─
+[character]
+success_symbol = "[╰─](#232526)[](#33D17A)" #was #62A0EA
+error_symbol = "[╰─](#232526)[](#F66151)"
+
+
+[line_break]
+disabled = false
+
+[fill]
+symbol = ' '
+style = 'bold green'
+
+[cmd_duration]
+min_time = 1
+format = "[](fg:#232526 bg:none)[$duration]($style)[](fg:#232526 bg:#232526)[](fg:#bc83e3 bg:#232526)[](fg:#232526 bg:#bc83e3)[](fg:#bc83e3 bg:none)"
+disabled = false
+style = "fg:#edeff0 bg:#232526 bold"
+
+
+[git_branch]
+format = "[](fg:#232526 bg:none)[$branch]($style)[](fg:#232526 bg:#232526)[](fg:#78b892 bg:#232526)[](fg:#282c34 bg:#78b892)[](fg:#78b892 bg:none) "
+style = "fg:#edeff0 bg:#232526"
+symbol = " "
+
+[git_status]
+format="[](fg:#232526 bg:none)[$all_status$ahead_behind]($style)[](fg:#232526 bg:#232526)[](fg:#67afc1 bg:#232526)[](fg:#232526 bg:#67afc1)[](fg:#67afc1 bg:none) "
+style = "fg:#edeff0 bg:#232526"
+conflicted = "="
+ahead =	"⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+up_to_date = ""
+untracked = "?${count}"
+stashed = ""
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "${count}"
+
+[git_commit]
+format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
+style = "green"
+
+[git_state]
+rebase = "REBASING"
+merge =	"MERGING"
+revert = "REVERTING"
+cherry_pick = "CHERRY-PICKING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style =	"yellow"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+
+# SYMBOLS
+
+[aws]
+symbol = "  "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+#[directory]
+
+[docker_context]
+symbol = " "
+format = "via [$symbol$context]($style) "
+style = "blue bold"
+only_with_files = true
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_folders = []
+disabled = false
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[haskell]
+symbol = "λ "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+#pyenv_version_name = true
+format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
+style = "bold yellow"
+pyenv_prefix = "venv "
+python_binary = ["./venv/bin/python", "python", "python3", "python2"]
+detect_extensions = ["py"]
+version_format = "v${raw}"
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
+
+[nodejs]
+format = "via [ Node.js $version](bold green) "
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
