@@ -1,11 +1,11 @@
 ### Themes (Gnome + Zellij + LunarVim/LazyVim + Alacritty)
 <p float="left">
-  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/d13c80e1-3f36-4e15-8df3-6b265630179c" width="300" />
-  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/f9bb2a90-9d74-4671-a679-3392ded47e7e" width="300" /> 
-  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/5c4d10fc-5fb4-463b-b27c-5fc66c242d65" width="300" />
-  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/8c88027a-20dd-4c63-9af4-d823b501056b" width="300" />
-  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/9c2384a5-8ad5-4f74-8257-be11849700f4" width="300" />
-  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/6b38e758-a47c-42cc-8afa-3c2cee7d5d8c" width="300" />
+  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/d13c80e1-3f36-4e15-8df3-6b265630179c" width="450" />
+  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/f9bb2a90-9d74-4671-a679-3392ded47e7e" width="450" /> 
+  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/5c4d10fc-5fb4-463b-b27c-5fc66c242d65" width="450" />
+  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/8c88027a-20dd-4c63-9af4-d823b501056b" width="450" />
+  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/9c2384a5-8ad5-4f74-8257-be11849700f4" width="450" />
+  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/6b38e758-a47c-42cc-8afa-3c2cee7d5d8c" width="450" />
 
 ### Zsh stuff (Aliases +, Themes + Fzf + Plugins + Prompts)
 <p float="left">
