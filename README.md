@@ -9,7 +9,7 @@
 
 ### Zsh stuff (Aliases +, Themes + Fzf + Plugins + Prompts)
 <p float="left">
-  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/b98b26aa-e9c9-46c8-88a0-a365eee5f69e" width="910" />
+  <img src="https://github.com/JxJxxJxJ/dotfiles-/assets/103049321/b98b26aa-e9c9-46c8-88a0-a365eee5f69e" width="805" />
 
 ### Keybindings (DCONF)
 
